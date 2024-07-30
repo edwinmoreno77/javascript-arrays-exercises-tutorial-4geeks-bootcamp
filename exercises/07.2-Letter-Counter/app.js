@@ -2,5 +2,9 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // Your code here
+for (letter of par.toLowerCase()) {
+    if (letter == ' ') continue;
+    counts[letter] ? counts[letter] += 1 : counts[letter] = 1;
+}
 
 console.log(counts);
