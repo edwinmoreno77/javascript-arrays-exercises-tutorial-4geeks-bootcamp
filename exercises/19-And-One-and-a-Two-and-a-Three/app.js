@@ -4,8 +4,8 @@ let contact = {
     email: "test@test.com"
 }
 
-for (let key in contact) {
+for (key of contact) {
     // Your code here
-
+    console.log(`${key} : ${contact[key]}`);
 }
 
